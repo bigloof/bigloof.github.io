@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>        
+<body bgcolor="black">
+<script type="application/javascript" src="clicker.js"></script>
+<div class="container">
+<h1>C l i c k e r</h1>
+    <span id="coinsPS">$0</span><br />
+    <hr>
+    <p>
+<table class="table" align="center">
+    <tr>
+        <td><span id="coins">$0</span></td>
+        <td><button type="button" class="button" onclick="gainCoin()">Buy 1x</button></td>
+        <td><button type="button" class="button" onclick="gainTenPS(), move()">Buy 50x</button></td>
+        <td><button type="button" class="button" onclick="gainHundredPS()">Buy 100x</button></td>
+        <td><button type="button" class="button" onclick="gainThousandPS()">Buy 1000x</button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td><span id="costPS">$0</span></td>
+        <td><span id="costPSh">$0</span></td>
+        <td><span id="costPSt">$0</span></td>
+    </tr>   
+</table>
+  <!--  <div id="myProgress">
+    <div id="myBar">
+    <div id="label">$0</div></div></div>
+    -->
+        </div>
+        <br />
+    </p>
+</div>
+</body>
+</html>
