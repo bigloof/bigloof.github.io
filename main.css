@@ -1,10 +1,12 @@
 .container {
   padding:5px 30px 30px 30px;
   margin:30px;
-  border:solid white 1px;
+  border:solid #33ccff 1px;
   border-radius:5px;
   background-color:#e6e6e6;
   text-align:center;
+  font-family: "Verdana";
+    font-weight: bold
 }
 
 .button {
@@ -17,9 +19,11 @@
   outline: none;
   color: #fff;
   background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 5px #999;
+  border: 2px solid black;
+}
+.btn-success, .btn-danger, .btn-default {
+  box-shadow: 0 2px #000;
+  font-family: "lucida console";
 }
 
 .button:hover {background-color: #3e8e41}
@@ -29,21 +33,63 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.tooltip, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
 
-.btn-success, .btn-danger {
-  width:200px;
+.tooltip {
+  pointer-events: none;
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font: bold 14px "Helvetica Neue", Sans-Serif;
+  font-stretch: condensed;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 7px black;
 }
-#myProgress {
-    width: 25%;
-    background-color: grey;
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
 }
-#myBar {
-    width: 1%;
-    height: 30px;
-    background-color: black;
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  -webkit-box-shadow: 6px 5px 9px -9px black,
+                      5px 6px 9px -9px black;
+  -moz-box-shadow: 6px 5px 9px -9px black,
+                   5px 6px 9px -9px black;
+  box-shadow: 6px 5px 9px -9px black,
+              5px 6px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
 }
-#label {
-    text-align: left; /* If you want to center it */
-    line-height: 30px; /* Set the line-height to the same as the height of the progress bar container, to center it vertically */
-    color: white;
+.tooltip.active {
+  opacity: 1;
+  margin-top: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+.tooltip.out {
+  opacity: 0;
+  margin-top: -20px;
 }

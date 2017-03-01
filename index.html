@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="main.css"/>
-</head>        
-<body bgcolor="black">
-<script type="application/javascript" src="clicker.js"></script>
-<div class="container">
-<h1>C l i c k e r</h1>
-    <span id="coinsPS">$0</span><br />
+    <head>
+        <title>C l i c k e T</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="clicker.js"></script>
+    </head>
+    <body style="background-color: black;">
+    <div class="container">
+    <h1>C l i c k e T</h1>
     <hr>
-    <p>
-<table class="table" align="center">
-    <tr>
-        <td><span id="coins">$0</span></td>
-        <td><button type="button" class="button" onclick="gainCoin()">Buy 1x</button></td>
-        <td><button type="button" class="button" onclick="gainTenPS(), move()">Buy 50x</button></td>
-        <td><button type="button" class="button" onclick="gainHundredPS()">Buy 100x</button></td>
-        <td><button type="button" class="button" onclick="gainThousandPS()">Buy 1000x</button></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td><span id="costPS">$0</span></td>
-        <td><span id="costPSh">$0</span></td>
-        <td><span id="costPSt">$0</span></td>
-    </tr>   
-</table>
-  <!--  <div id="myProgress">
-    <div id="myBar">
-    <div id="label">$0</div></div></div>
-    -->
-        </div>
-        <br />
+    <p id="color" style="color:#e6e6e6;">Not Enough!
+    <table class="table table-hover" align="center">
+        <tbody>
+            <tr>
+                <td align="left"><span id="coinsPS">$0</span></td>
+                <td colspan="4" align="right"><span id="coins" align="right">$0</span></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs" onclick="gainCoin()">$1</button>
+                        <button id="buy50" type="button" class="btn btn-default btn-xs" onclick="gainFiftyPS()">$50 <span class="label label-info" id="UpCost50"></span></button>
+                        <button type="button" class="btn btn-default btn-xs" onclick="gainHundredPS()">$100 <span class="label label-info" id="UpCost100"></span></button>
+                        <button type="button" class="btn btn-default btn-xs" onclick="gainThousandPS()">$1000 <span class="label label-info" id="UpCost1000"></span></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" align="right">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-xs" onclick="gainMilPS()">$1M <span class="label label-info" id="UpCostMil"></span></button>
+                        <button id="buy50" type="button" class="btn btn-default btn-xs" onclick="gainBilPS()">$1B <span class="label label-info" id="UpCostBil"></span></button>
+                        <button type="button" class="btn btn-default btn-xs" onclick="gainTrilPS()">$1T <span class="label label-info" id="UpCostTril"></span></button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </p>
-</div>
+    </div>
+    </p>
 </body>
 </html>
