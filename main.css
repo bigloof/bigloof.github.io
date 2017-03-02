@@ -1,49 +1,56 @@
-.container {
-  padding:5px 30px 30px 30px;
-  margin:30px;
-  border:solid #33ccff 1px;
-  border-radius:5px;
-  background-color:#e6e6e6;
-  text-align:center;
-  font-family: "Verdana";
-    font-weight: bold
+.container
+{
+	padding : 5px 30px 30px 30px;
+	margin : 30px;
+	border : solid #33ccff 1px;
+	border-radius : 5px;
+	background-color : #e6e6e6;
+	text-align : center;
+	font-family : "Verdana";
+	font-weight : bold;
 }
 
-.button {
-    position: relative;
-    background-color: #000;
-    border: none;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
+/* Safari */
+.button
+{
+	position : relative;
+	background-color : #000;
+	border : solid #33ccff 1px;
+	font-size : 20px;
+	color : #FFFFFF;
+	padding : 10px;
+	width : 200px;
+	text-align : center;
+	-webkit-transition-duration : 0.4s;
+	transition-duration : 0.4s;
+	text-decoration : none;
+	overflow : hidden;
+	cursor : pointer;
 }
 
-.button:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
+.button:after
+{
+	content : "";
+	background : #f1f1f1;
+	display : block;
+	position : absolute;
+	padding-top : 300%;
+	padding-left : 350%;
+	margin-left : -20px !important;
+	margin-top : -120%;
+	opacity : 0;
+	transition : all 0.8s;
 }
 
-.button:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+.button:active:after
+{
+	padding : 0;
+	margin : 0;
+	opacity : 1;
+	transition : 0s;
 }
-.label {
-  float:center;  
+
+.label
+{
+	float : center;
 }
