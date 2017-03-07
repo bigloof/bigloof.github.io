@@ -9,10 +9,14 @@
 		"width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link type="text/css" rel="stylesheet" href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><script
- type="text/javascript" src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="jquery-3.1.1"></script>
+<script
+  type="text/javascript" src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    
 <script type="text/javascript" src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 </script>
@@ -37,58 +41,36 @@
 					</td>
 				</tr>
 			</table>
-			<table class="table table-hover" align="center">
-				<tbody>
-					<tr>
-						<td>
-							<button type="button" class="button"
-							onclick="gainOnePS()"><span id=
-							"UpCost1"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button id="buy50" type="button" class=
-							"button" onclick="gainFiftyPS()"><span
-							id="UpCost50"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button type="button" class="button"
-							onclick="gainHundredPS()"><span id=
-							"UpCost100"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button type="button" class="button"
-							onclick="gainThousandPS()"><span id=
-							"UpCost1000"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button type="button" class="button"
-							onclick="gainMilPS()"><span id=
-							"UpCostMil"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button id="buy50" type="button" class=
-							"button" onclick="gainBilPS()"><span
-							id="UpCostBil"></span></button>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<button type="button" class="button"
-							onclick="gainTrilPS()"><span id=
-							"UpCostTril"></span></button>
-						</td>
-					</tr>
-				</tbody>
+			<table align="center" width="100%">
+                <tr><td rowspan="3"><img src="images/slime.gif" height="64" width="64"></td>
+                    <td align="left" bgcolor="#EFEFEF" width="100%"><span id="Lvl1"></span>
+                    </td>
+                    <td rowspan="3" align="right">
+                        <button type="button" class="button" onclick="gainOnePS()">
+                            <span id="UpCost1"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" bgcolor="#EFEFEF" width="100%"><span id="Multi"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" bgcolor="#EFEFEF" width="100%"><span id="Next"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="szlider">
+    <div id="slidebar">
+    </div>
+    <div id="slidetext">
+    </div>
+</div>
+
+                    </td>
+                </tr>
+
 			</table>
 		</div>
 	</body>
